@@ -1,0 +1,96 @@
+@import '~bootstrap/scss/bootstrap';
+
+.ivy_logo {
+    height: 50px;
+    aspect-ratio: 1/1;
+}
+
+body {
+    background-color: rgb(62, 62, 62);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    // margin: 2rem 0;
+    flex-grow: 1;
+
+    .my_h1 {
+        font-size: 4.5rem;
+        width: 50%;
+        line-height: 5rem;
+    }
+
+    div.home-jumbo {
+        background-image: url(https://images-ext-2.discordapp.net/external/fXXP2GbHlefTBKp8g380DvF41vilFWxQXpXPr7ua3ss/https/a.cdn-hotels.com/gdcs/production154/d472/3f169dde-bd95-4282-8bb1-0457c72c0c7e.jpg?width=2000&height=1332);
+        // padding: 200px;
+        width: 100%;
+        height: 60vh;
+        color: white;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+div.container-modal {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+
+    div.modale {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        z-index: 3;
+        overflow: hidden;
+
+        div.header {
+            background-color: rgb(84, 84, 84);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.55rem 1rem;
+        }
+
+        div.button {
+            background-image: url(https://media.tenor.com/5gL5pPo-0W0AAAAC/sunset-fire.gif);
+            background-size: cover;
+            background-position: center;
+
+            button {
+                padding: 0.1rem 1rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+div.container-modal.active {
+    display: flex;
+}
+
+.ivy_form {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+ul.alert {
+    list-style: none;
+}
+
+img.card-show {
+    height: 400px;
+    object-fit: cover;
+}
